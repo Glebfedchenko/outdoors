@@ -1,0 +1,10 @@
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($mediumGreen, 0.8),
+      rgba($darkGreen, 0.8)
+    ),
+    url(../img/nat-4.jpg);
+  background-size: cover;
+}

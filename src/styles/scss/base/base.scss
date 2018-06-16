@@ -22,7 +22,24 @@ html {
 .u-text-center {
   text-align: center;
 }
-
-.u-margin-bottom-8 {
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+.u-margin-bottom-big {
   margin-bottom: 8rem;
+}
+
+.heading-tertiary {
+  font-size: $defaultFont;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.paragraph {
+  font-size: $defaultFont;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 }
