@@ -1,13 +1,8 @@
 .section-tours {
   background-color: $lightGrey;
-  padding: 25rem 0 15rem 0;
+  padding: 15rem 0 15rem 0;
   margin-top: -10rem;
   position: relative;
-  transform: skewY(-7deg);
-
-  &-wrapper {
-    transform: skewY(7deg);
-  }
 }
 
 .card {

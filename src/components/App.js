@@ -3,6 +3,7 @@ import Header from "./Header";
 import About from "./About";
 import Features from "./Features";
 import Tours from "./Tours";
+import Stories from "./Stories";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <About />
       <Features />
       <Tours />
+      <Stories />
     </Fragment>
   );
 };
