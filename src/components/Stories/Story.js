@@ -1,7 +1,6 @@
-import { storyData } from "./storydata";
-
 import React from "react";
-const Story = () => {
+import { connect } from "react-redux";
+const Story = ({ storyData }) => {
   return (
     <div>
       {storyData.map((s, i) => {
@@ -25,4 +24,4 @@ const Story = () => {
     </div>
   );
 };
-export default Story;
+export default connect(state => ({ storyData: state.stories }))(Story);

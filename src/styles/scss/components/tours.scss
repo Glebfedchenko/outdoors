@@ -3,6 +3,10 @@
   padding: 15rem 0 15rem 0;
   margin-top: -10rem;
   position: relative;
+  transform: skewY(-7deg);
+  &__wrapper {
+    transform: skewY(7deg);
+  }
 }
 
 .card {

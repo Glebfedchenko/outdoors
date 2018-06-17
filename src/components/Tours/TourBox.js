@@ -1,7 +1,7 @@
 import React from "react";
-import { toursData } from "./tourdata";
+import { connect } from "react-redux";
 
-const TourBox = () => {
+const TourBox = ({ toursData }) => {
   return (
     <div>
       {toursData.map((t, i) => {
@@ -43,4 +43,4 @@ const TourBox = () => {
     </div>
   );
 };
-export default TourBox;
+export default connect(state => ({ toursData: state.tours }))(TourBox);

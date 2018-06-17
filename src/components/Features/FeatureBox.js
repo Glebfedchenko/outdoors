@@ -1,6 +1,7 @@
 import React from "react";
-import { featureData } from "./featureData";
-const FeatureBox = () => {
+import { connect } from "react-redux";
+
+const FeatureBox = ({ featureData }) => {
   return (
     <div>
       {featureData.map((item, i) => {
@@ -20,4 +21,4 @@ const FeatureBox = () => {
   );
 };
 
-export default FeatureBox;
+export default connect(state => ({ featureData: state.features }))(FeatureBox);
